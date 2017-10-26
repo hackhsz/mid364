@@ -1,0 +1,4 @@
+<ul> 
+   <h3> Hi Trainer, the league is sorry for this error </h3>
+   <p> <a href = "{{url_for("pokemon") }}"> Go To Your Dreams</a></p>
+</ul>

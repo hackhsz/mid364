@@ -1,0 +1,6 @@
+<ul>
+  <h2> Information you need to become a master trainer </h2>
+  { % for a in data["damage_relations"] %}
+          <p> These are the types deals with no damage by {{data["name"]}} <p>
+          <li>Types : {{ data["no_damage_to"]["name"] }} </li>
+  {% endfor %}

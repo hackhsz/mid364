@@ -1,0 +1,15 @@
+<ul>
+  <h2> Information you need to become a master trainer </h2>
+  
+          <p> These are the types deals with only half  damage by {{data["name"]}} <p>
+  {% for n in data["damage_relations"] %}
+         {% if "half_damage_to" in n %}
+         {% for b in data["damage_relations"]["half_damage_to"] %} 
+          <li>Types : {{ b["name"] }} </li>
+         {% endfor %}
+         
+         {% endif %}
+         
+  {% endfor %}
+
+</ul>

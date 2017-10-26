@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script type='text/javascript'>
+		function {{poke}} {
+			baseurl = 'http://localhost:5000/getname/items/'+ '{{pokes}}'
+		}
+	</script>
+</head>
+<body>
+  <ul>
+    <h1> You have chosen {{data['main']}}</h1>
+    {% for pokes in data['similar'] %}
+    	<h3> This one is pretty similar </h3>
+        <li><a href = "http://localhost:5000/getname/items/{{pokes}}">{{pokes}}</a></li>
+	  
+    {% endfor %}
+  </ul>
+</body>
+</html>
+

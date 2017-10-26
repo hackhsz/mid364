@@ -1,0 +1,17 @@
+<html>
+<title>Pokemon Name Form</title>
+<body>
+
+
+<img src="{{url_for('static',filename="great.jpg",alt="Welcome Trainers",width = "500",height= "400")}}" />
+<form action="http://localhost:5000/getname" method="POST">
+  {{ form.hidden_tag() }}
+  {% for message in get_flashed_messages() %}
+  {{ message }}
+  {% endfor %}
+<h3> Get Similar Names for Pokemon! </h3>
+<h4> {{ form.name.label }} :{{form.name() }}</h4>
+{{form.submit()}}
+</form>
+</body>
+</html>

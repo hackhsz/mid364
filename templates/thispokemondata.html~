@@ -1,0 +1,12 @@
+<ul>
+  <h2> Show some interesting data of this {{data["forms"][0]["name"]}}</h2>
+  {% for a in data["types"] %}
+     <li>
+       <h4> Type Name : {{ a["type"]["name"]}}</h4>
+     </li>
+  {% endfor %}
+
+  {% if "weight" in data %}
+     <p> Weight: {{ data["weight"]}}</p>
+  {% endif %}
+</ul>
